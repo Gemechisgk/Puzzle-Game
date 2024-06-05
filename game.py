@@ -141,7 +141,7 @@ class Application(tk.Frame):
 			self.swap_cell(self.emptyCell, self.emptyCell + 4)
 			self.emptyCell += 4
 			self.update_state()
-
+# 
 	def left(self, event=None):
 		row_changed = self.emptyCell // 4 == (self.emptyCell - 1) // 4
 		if 0 <= (self.emptyCell - 1) % 4 < 4 and row_changed:
